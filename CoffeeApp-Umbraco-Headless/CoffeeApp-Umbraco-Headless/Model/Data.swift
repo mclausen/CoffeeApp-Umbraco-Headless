@@ -21,7 +21,7 @@ func loadLiveData() -> [Drink] {
     request.setValue("en-US", forHTTPHeaderField: "Accept-Language")
     request.setValue("appplication/json", forHTTPHeaderField: "Content-type")
     
-    var drinks: [Drink] = []
+    let drinks: [Drink] = []
     let task = URLSession.shared.dataTask(with: request) { data, response, error in
         if let error = error {
             fatalError("Error: \(error.localizedDescription)")
@@ -42,12 +42,6 @@ func loadLiveData() -> [Drink] {
             
             var drinks: [Drink] = []
             for contentNode in contents {
-                //var id = contentNode._id!
-                //var name = contentNode.drinkname!
-                //var description = contentNode.description;
-                //var category = CategoryEnum(rawValue: contentNode.category!)!
-                //var imageUrl = contentNode.image!._url!
-                //var imageName = ""
                 
                 var drink : Drink! = Drink()
                 drink.id = contentNode._id!
