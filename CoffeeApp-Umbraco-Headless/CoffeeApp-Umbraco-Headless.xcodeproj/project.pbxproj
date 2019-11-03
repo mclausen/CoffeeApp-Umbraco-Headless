@@ -19,6 +19,19 @@
 		B7AC6818236F2325001B2430 /* DrinkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC6814236F2325001B2430 /* DrinkItem.swift */; };
 		B7AC6819236F2325001B2430 /* DrinkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC6815236F2325001B2430 /* DrinkDetail.swift */; };
 		B7AC681B236F2354001B2430 /* drinks.json in Resources */ = {isa = PBXBuildFile; fileRef = B7AC681A236F2354001B2430 /* drinks.json */; };
+		B7AC682C236F2BEE001B2430 /* Self.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC681F236F2BED001B2430 /* Self.swift */; };
+		B7AC682D236F2BEE001B2430 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC6820236F2BED001B2430 /* Page.swift */; };
+		B7AC682E236F2BEE001B2430 /* Ancestors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC6821236F2BED001B2430 /* Ancestors.swift */; };
+		B7AC682F236F2BEE001B2430 /* UmbracoFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC6822236F2BED001B2430 /* UmbracoFile.swift */; };
+		B7AC6830236F2BEE001B2430 /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC6823236F2BED001B2430 /* Parent.swift */; };
+		B7AC6831236F2BEE001B2430 /* Embedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC6824236F2BEE001B2430 /* Embedded.swift */; };
+		B7AC6832236F2BEE001B2430 /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC6825236F2BEE001B2430 /* Json4Swift_Base.swift */; };
+		B7AC6833236F2BEE001B2430 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC6826236F2BEE001B2430 /* Links.swift */; };
+		B7AC6834236F2BEE001B2430 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC6827236F2BEE001B2430 /* Root.swift */; };
+		B7AC6835236F2BEE001B2430 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC6828236F2BEE001B2430 /* Content.swift */; };
+		B7AC6836236F2BEE001B2430 /* Children.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC6829236F2BEE001B2430 /* Children.swift */; };
+		B7AC6837236F2BEE001B2430 /* Descendants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC682A236F2BEE001B2430 /* Descendants.swift */; };
+		B7AC6838236F2BEE001B2430 /* IImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC682B236F2BEE001B2430 /* IImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +68,19 @@
 		B7AC6814236F2325001B2430 /* DrinkItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkItem.swift; sourceTree = "<group>"; };
 		B7AC6815236F2325001B2430 /* DrinkDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkDetail.swift; sourceTree = "<group>"; };
 		B7AC681A236F2354001B2430 /* drinks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = drinks.json; path = ../../../CoffeeApp/CoffeeApp/drinks.json; sourceTree = "<group>"; };
+		B7AC681F236F2BED001B2430 /* Self.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Self.swift; sourceTree = "<group>"; };
+		B7AC6820236F2BED001B2430 /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		B7AC6821236F2BED001B2430 /* Ancestors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ancestors.swift; sourceTree = "<group>"; };
+		B7AC6822236F2BED001B2430 /* UmbracoFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UmbracoFile.swift; sourceTree = "<group>"; };
+		B7AC6823236F2BED001B2430 /* Parent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
+		B7AC6824236F2BEE001B2430 /* Embedded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Embedded.swift; sourceTree = "<group>"; };
+		B7AC6825236F2BEE001B2430 /* Json4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json4Swift_Base.swift; sourceTree = "<group>"; };
+		B7AC6826236F2BEE001B2430 /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		B7AC6827236F2BEE001B2430 /* Root.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		B7AC6828236F2BEE001B2430 /* Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		B7AC6829236F2BEE001B2430 /* Children.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Children.swift; sourceTree = "<group>"; };
+		B7AC682A236F2BEE001B2430 /* Descendants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Descendants.swift; sourceTree = "<group>"; };
+		B7AC682B236F2BEE001B2430 /* IImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +129,7 @@
 		B71FB5B3236F0FED00C926E4 /* CoffeeApp-Umbraco-Headless */ = {
 			isa = PBXGroup;
 			children = (
+				B7AC681E236F2BD0001B2430 /* Headless */,
 				B7AC681A236F2354001B2430 /* drinks.json */,
 				B7AC681C236F2363001B2430 /* Views */,
 				B7AC681D236F236C001B2430 /* Model */,
@@ -142,6 +169,26 @@
 				B7AC680E236F231A001B2430 /* Drink.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B7AC681E236F2BD0001B2430 /* Headless */ = {
+			isa = PBXGroup;
+			children = (
+				B7AC6824236F2BEE001B2430 /* Embedded.swift */,
+				B7AC6826236F2BEE001B2430 /* Links.swift */,
+				B7AC6821236F2BED001B2430 /* Ancestors.swift */,
+				B7AC6829236F2BEE001B2430 /* Children.swift */,
+				B7AC6828236F2BEE001B2430 /* Content.swift */,
+				B7AC682A236F2BEE001B2430 /* Descendants.swift */,
+				B7AC682B236F2BEE001B2430 /* IImage.swift */,
+				B7AC6825236F2BEE001B2430 /* Json4Swift_Base.swift */,
+				B7AC6820236F2BED001B2430 /* Page.swift */,
+				B7AC6823236F2BED001B2430 /* Parent.swift */,
+				B7AC6827236F2BEE001B2430 /* Root.swift */,
+				B7AC681F236F2BED001B2430 /* Self.swift */,
+				B7AC6822236F2BED001B2430 /* UmbracoFile.swift */,
+			);
+			path = Headless;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,13 +323,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7AC6837236F2BEE001B2430 /* Descendants.swift in Sources */,
 				B71FB5B5236F0FED00C926E4 /* AppDelegate.swift in Sources */,
+				B7AC682F236F2BEE001B2430 /* UmbracoFile.swift in Sources */,
 				B7AC6810236F231A001B2430 /* Drink.swift in Sources */,
+				B7AC6830236F2BEE001B2430 /* Parent.swift in Sources */,
 				B7AC6816236F2325001B2430 /* DrinkRow.swift in Sources */,
+				B7AC6835236F2BEE001B2430 /* Content.swift in Sources */,
+				B7AC6838236F2BEE001B2430 /* IImage.swift in Sources */,
 				B7AC6818236F2325001B2430 /* DrinkItem.swift in Sources */,
+				B7AC682D236F2BEE001B2430 /* Page.swift in Sources */,
+				B7AC6833236F2BEE001B2430 /* Links.swift in Sources */,
 				B71FB5B7236F0FED00C926E4 /* SceneDelegate.swift in Sources */,
+				B7AC6832236F2BEE001B2430 /* Json4Swift_Base.swift in Sources */,
 				B7AC6817236F2325001B2430 /* Home.swift in Sources */,
+				B7AC6831236F2BEE001B2430 /* Embedded.swift in Sources */,
+				B7AC6836236F2BEE001B2430 /* Children.swift in Sources */,
+				B7AC6834236F2BEE001B2430 /* Root.swift in Sources */,
 				B7AC6811236F231A001B2430 /* Data.swift in Sources */,
+				B7AC682E236F2BEE001B2430 /* Ancestors.swift in Sources */,
+				B7AC682C236F2BEE001B2430 /* Self.swift in Sources */,
 				B7AC6819236F2325001B2430 /* DrinkDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
