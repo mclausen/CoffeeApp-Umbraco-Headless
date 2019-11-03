@@ -32,6 +32,7 @@
 		B7AC6836236F2BEE001B2430 /* Children.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC6829236F2BEE001B2430 /* Children.swift */; };
 		B7AC6837236F2BEE001B2430 /* Descendants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC682A236F2BEE001B2430 /* Descendants.swift */; };
 		B7AC6838236F2BEE001B2430 /* IImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC682B236F2BEE001B2430 /* IImage.swift */; };
+		B7AC683A236F48CF001B2430 /* CategoryEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC6839236F48CF001B2430 /* CategoryEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		B7AC6829236F2BEE001B2430 /* Children.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Children.swift; sourceTree = "<group>"; };
 		B7AC682A236F2BEE001B2430 /* Descendants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Descendants.swift; sourceTree = "<group>"; };
 		B7AC682B236F2BEE001B2430 /* IImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IImage.swift; sourceTree = "<group>"; };
+		B7AC6839236F48CF001B2430 /* CategoryEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				B7AC681E236F2BD0001B2430 /* Headless */,
 				B7AC680F236F231A001B2430 /* Data.swift */,
 				B7AC680E236F231A001B2430 /* Drink.swift */,
+				B7AC6839236F48CF001B2430 /* CategoryEnum.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			files = (
 				B7AC6837236F2BEE001B2430 /* Descendants.swift in Sources */,
 				B71FB5B5236F0FED00C926E4 /* AppDelegate.swift in Sources */,
+				B7AC683A236F48CF001B2430 /* CategoryEnum.swift in Sources */,
 				B7AC682F236F2BEE001B2430 /* UmbracoFile.swift in Sources */,
 				B7AC6810236F231A001B2430 /* Drink.swift in Sources */,
 				B7AC6830236F2BEE001B2430 /* Parent.swift in Sources */,
@@ -517,7 +521,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Umbraco.CoffeeApp-Umbraco-Headless";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -536,7 +540,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Umbraco.CoffeeApp-Umbraco-Headless";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

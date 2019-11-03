@@ -8,14 +8,19 @@
 
 import Foundation
 struct Drink : Hashable, Codable, Identifiable {
-    var id:Int
+    var id:String
     var name:String
     var imageName:String
-    var category:Category
+    var imageUrl:String
+    var category:CategoryEnum
     var description:String
     
-    enum Category : String, CaseIterable, Codable, Hashable {
-        case hot = "hot"
-        case cold = "cold"
+    init() {
+        id = ""
+        name = ""
+        imageName = ""
+        imageUrl = ""
+        category = CategoryEnum.def
+        description = ""
     }
 }
