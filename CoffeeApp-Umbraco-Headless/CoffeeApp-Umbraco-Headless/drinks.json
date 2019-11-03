@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1001,
+        "name": "Cappuccino",
+        "imageName": "Cappuccino",
+        "description": "Outside of Italy, cappuccino is a coffee drink that today is typically composed of double espresso and hot milk, with the surface topped with foamed milk.[1] Cappuccinos are most often prepared with an espresso machine. The double espresso is poured into the bottom of the cup, followed by a similar amount of hot milk, which is prepared by heating and texturing the milk using the espresso machine steam wand. The top third of the drink consists of milk foam; this foam can be decorated with artistic drawings made with the same milk, called latte art.",
+        "category": "hot"
+    },
+    {
+        "id": 1002,
+        "name": "Espresso",
+        "imageName": "Espresso",
+        "description": "Espresso (/ɛˈsprɛsoʊ/ (About this soundlisten), Italian: [esˈprɛsso]) is coffee of Italian origin, brewed by forcing a small amount of nearly boiling water under pressure (expressing) through finely ground coffee beans. Espresso is generally thicker than coffee brewed by other methods, has a higher concentration of suspended and dissolved solids, and has crema on top (a foam with a creamy consistency).[1] As a result of the pressurized brewing process, the flavors and chemicals in a typical cup of espresso are very concentrated. Espresso is also the base for other drinks such as a caffè latte, cappuccino, caffè macchiato, caffè mocha, flat white, or caffè Americano.",
+        "category": "hot"
+    },
+    {
+        "id": 1003,
+        "name": "Latte",
+        "imageName": "Latte",
+        "description": "A latte (/ˈlɑːteɪ/ or /ˈlæteɪ/)[1][2] is a coffee drink made with espresso and steamed milk. The term as used in English is a shortened form of the Italian caffè e latte[3] [kafˌfɛ e lˈlatte], caffelatte [kaffeˈlatte] or caffellatte [kaffelˈlatte], which means \"milk coffee\". The word is also sometimes spelled latté or lattè in English with different kinds of accent marks, which can be a hyperforeignism or a deliberate attempt to indicate that the word is not pronounced according to the rules of English orthography.",
+        "category": "hot"
+    },
+    {
+        "id": 1004,
+        "name": "Iced coffee",
+        "imageName": "IcedCoffee",
+        "description": "Iced coffee is a type of coffee beverage served chilled, brewed variously with the fundamental division being cold brew – brewing the coffee cold, yielding a different flavour, and not requiring cooling – or brewing normally (hot) and then cooling, generally by simply pouring over ice or into ice cold milk. In hot brewing, sweeteners and flavourings are often mixed into the hot coffee before cooling, due to faster dissolution in hot water. Alternatively, syrup (sugar pre-dissolved in water) may be used, particularly gum syrup.",
+        "category": "cold"
+    },
+    {
+        "id": 1005,
+        "name": "Cold brew",
+        "imageName": "ColdBrew",
+        "description": "A French press, also known as a press pot, coffee press, coffee plunger, cafetière (UK) or cafetière à piston, is a coffee brewing device patented by Italian designer Attilio Calimani in 1929.[5] A French press requires a coarser grind of coffee than a drip brew coffee filter, as finer grounds will seep through the press filter and into the coffee.[6]",
+        "category": "cold"
+    }
+]
