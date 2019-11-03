@@ -129,7 +129,6 @@
 		B71FB5B3236F0FED00C926E4 /* CoffeeApp-Umbraco-Headless */ = {
 			isa = PBXGroup;
 			children = (
-				B7AC681E236F2BD0001B2430 /* Headless */,
 				B7AC681A236F2354001B2430 /* drinks.json */,
 				B7AC681C236F2363001B2430 /* Views */,
 				B7AC681D236F236C001B2430 /* Model */,
@@ -165,6 +164,7 @@
 		B7AC681D236F236C001B2430 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B7AC681E236F2BD0001B2430 /* Headless */,
 				B7AC680F236F231A001B2430 /* Data.swift */,
 				B7AC680E236F231A001B2430 /* Drink.swift */,
 			);
