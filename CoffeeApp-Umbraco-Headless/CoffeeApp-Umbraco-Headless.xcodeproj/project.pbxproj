@@ -33,6 +33,9 @@
 		B7AC6837236F2BEE001B2430 /* Descendants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC682A236F2BEE001B2430 /* Descendants.swift */; };
 		B7AC6838236F2BEE001B2430 /* IImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC682B236F2BEE001B2430 /* IImage.swift */; };
 		B7AC683A236F48CF001B2430 /* CategoryEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC6839236F48CF001B2430 /* CategoryEnum.swift */; };
+		B7AC683C236F76CA001B2430 /* DrinkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC683B236F76CA001B2430 /* DrinkImageView.swift */; };
+		B7AC683E236F7F8D001B2430 /* DrinksListingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC683D236F7F8D001B2430 /* DrinksListingsViewModel.swift */; };
+		B7CA05AD23896F2200132101 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA05AC23896F2200132101 /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		B7AC682A236F2BEE001B2430 /* Descendants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Descendants.swift; sourceTree = "<group>"; };
 		B7AC682B236F2BEE001B2430 /* IImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IImage.swift; sourceTree = "<group>"; };
 		B7AC6839236F48CF001B2430 /* CategoryEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEnum.swift; sourceTree = "<group>"; };
+		B7AC683B236F76CA001B2430 /* DrinkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkImageView.swift; sourceTree = "<group>"; };
+		B7AC683D236F7F8D001B2430 /* DrinksListingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksListingsViewModel.swift; sourceTree = "<group>"; };
+		B7CA05AC23896F2200132101 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,7 @@
 		B71FB5B3236F0FED00C926E4 /* CoffeeApp-Umbraco-Headless */ = {
 			isa = PBXGroup;
 			children = (
+				B7CA05AB23896F0E00132101 /* Services */,
 				B7AC681A236F2354001B2430 /* drinks.json */,
 				B7AC681C236F2363001B2430 /* Views */,
 				B7AC681D236F236C001B2430 /* Model */,
@@ -159,6 +166,7 @@
 				B7AC6814236F2325001B2430 /* DrinkItem.swift */,
 				B7AC6812236F2325001B2430 /* DrinkRow.swift */,
 				B7AC6813236F2325001B2430 /* Home.swift */,
+				B7AC683B236F76CA001B2430 /* DrinkImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +178,7 @@
 				B7AC680F236F231A001B2430 /* Data.swift */,
 				B7AC680E236F231A001B2430 /* Drink.swift */,
 				B7AC6839236F48CF001B2430 /* CategoryEnum.swift */,
+				B7AC683D236F7F8D001B2430 /* DrinksListingsViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,6 +201,14 @@
 				B7AC6822236F2BED001B2430 /* UmbracoFile.swift */,
 			);
 			path = Headless;
+			sourceTree = "<group>";
+		};
+		B7CA05AB23896F0E00132101 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B7CA05AC23896F2200132101 /* ImageLoader.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,10 +360,13 @@
 				B7AC6817236F2325001B2430 /* Home.swift in Sources */,
 				B7AC6831236F2BEE001B2430 /* Embedded.swift in Sources */,
 				B7AC6836236F2BEE001B2430 /* Children.swift in Sources */,
+				B7CA05AD23896F2200132101 /* ImageLoader.swift in Sources */,
 				B7AC6834236F2BEE001B2430 /* Root.swift in Sources */,
 				B7AC6811236F231A001B2430 /* Data.swift in Sources */,
 				B7AC682E236F2BEE001B2430 /* Ancestors.swift in Sources */,
+				B7AC683E236F7F8D001B2430 /* DrinksListingsViewModel.swift in Sources */,
 				B7AC682C236F2BEE001B2430 /* Self.swift in Sources */,
+				B7AC683C236F76CA001B2430 /* DrinkImageView.swift in Sources */,
 				B7AC6819236F2325001B2430 /* DrinkDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

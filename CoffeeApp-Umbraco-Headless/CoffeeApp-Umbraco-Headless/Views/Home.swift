@@ -9,30 +9,27 @@
 import SwiftUI
 
 struct HomeView: View {
-    
-    var categories:[String:[Drink]]{
-        .init(
-            grouping: drinkData,
-            by: {$0.category.rawValue}
-        )
-    }
-    
+    @ObservedObject var drinksListing:DrinksListingViewModel = DrinksListingViewModel()
+            
     var body: some View {
-        NavigationView{
-            List (categories.keys.sorted(), id: \String.self){ key in
-                DrinkRow(category: "\(key) Drinks".uppercased(), drinks: self.categories[key]!)
+       NavigationView{
+            List (drinksListing.categorizedDrinks.keys.sorted(), id: \String.self){ key in
+                DrinkRow(category: "\(key) Drinks".uppercased(), drinks: self.drinksListing.categorizedDrinks[key]!)
                     .frame(height: 320)
                     .padding(.top)
                     .padding(.bottom)
             }
             .navigationBarTitle(Text("Coffee Library"))
             .buttonStyle(PlainButtonStyle())
+            .onAppear(perform: drinksListing.loadLiveData)
         }
     }
+    
+
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(drinksListing: DrinksListingViewModel())
     }
 }

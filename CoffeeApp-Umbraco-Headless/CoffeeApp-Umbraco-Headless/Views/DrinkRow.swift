@@ -13,6 +13,11 @@ struct DrinkRow: View {
     var category:String
     var drinks:[Drink]
     
+    init(category:String, drinks:[Drink]){
+        self.drinks = drinks
+        self.category = category
+    }
+    
     var body: some View {
         VStack(alignment: .leading) {
             

@@ -11,16 +11,15 @@ import SwiftUI
 struct DrinkItem: View {
     
     var drink:Drink
+    init(drink:Drink) {
+        self.drink = drink
+    }
+    
+    
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16.0) {
-            Image(drink.imageName)
-                .resizable()
-                .renderingMode(.original)
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 300, height: 170)
-                .cornerRadius(10)
-                .shadow(radius: 10)
+            DrinkImageView(url: drink.imageUrl, placeholder: Image("placeholder"))
            
             VStack(alignment: .leading){
                 Text(drink.name)
