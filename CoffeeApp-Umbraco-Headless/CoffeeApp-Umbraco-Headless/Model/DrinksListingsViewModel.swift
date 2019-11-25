@@ -12,9 +12,7 @@ import Combine
 class DrinksListingViewModel: ObservableObject {
     
     @Published var categorizedDrinks = [String:[Drink]]()
-    
-    let didChange = PassthroughSubject<[String:[Drink]]?, Never>()
-    
+
     func loadLiveData(){
         let url = URL(string: "https://cdn.umbraco.io/content/d6761444-84d1-4bd8-9522-4a57961e0741/children")!
         var request = URLRequest(url: url)
@@ -27,21 +25,18 @@ class DrinksListingViewModel: ObservableObject {
             if let error = error {
                 print("Error: \(error.localizedDescription)")
                 DispatchQueue.main.async {
-                    self.didChange.send(self.categorizedDrinks)
                 }
                 return
             }
             guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
                 print("Error: invalid HTTP response code")
                 DispatchQueue.main.async {
-                    self.didChange.send(self.categorizedDrinks)
                 }
                 return
             }
             guard let data = data else {
                 print("Error: missing response data")
                 DispatchQueue.main.async {
-                    self.didChange.send(self.categorizedDrinks)
                 }
                 return
             }
@@ -67,7 +62,6 @@ class DrinksListingViewModel: ObservableObject {
                     _drinks.append(newDrink)
                 }
                 
-                
                 var categories:[String:[Drink]]{
                     .init(
                         grouping: _drinks,
@@ -75,10 +69,8 @@ class DrinksListingViewModel: ObservableObject {
                     )
                 }
                 
-                
                 DispatchQueue.main.async {
                     self.categorizedDrinks = categories;
-                    self.didChange.send(self.categorizedDrinks)
                 }
             }
             catch {

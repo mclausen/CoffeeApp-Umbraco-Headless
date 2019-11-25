@@ -15,9 +15,6 @@ class ImageLoader: ObservableObject {
     let didChange = PassthroughSubject<ImageLoader?, Never>()
     
     func load(url : String){
-        
-        print(url)
-        
         guard let imageUrl = URL(string: url) else {
             fatalError("ImageUrl is not correct")
         }

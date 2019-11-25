@@ -11,18 +11,37 @@ import SwiftUI
 struct DrinkDetail: View {
     
     var drink:Drink
+    var placeholder : Image
+   
+    
+    @ObservedObject private var imageLoader = ImageLoader()
+    init(drink: Drink, placeholder: Image = Image("placeholder")){
+        self.drink = drink
+        self.placeholder = placeholder
+        self.imageLoader.load(url: drink.imageUrl)
+    }
+    
+    func HeaderImage() -> some View{
+        if let uiImage = self.imageLoader.downloadedImage{
+            return Image(uiImage: uiImage)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+        } else {
+            return self.placeholder
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+        }
+    }
     
     var body: some View {
         List {
             ZStack(alignment: .bottom, content: {
-                Image(drink.imageName)
-                .resizable()
-                    .aspectRatio(contentMode: .fit)
+                HeaderImage()
                 
                 Rectangle()
                     .frame(height: 80)
                     .opacity(0.25)
-                .blur(radius: 10)
+                    .blur(radius: 10)
                 HStack{
                     VStack(alignment: .leading, spacing: 8) {
                         Text(drink.name)
@@ -34,6 +53,7 @@ struct DrinkDetail: View {
                     
                     Spacer()
                 }
+                
             })
             .listRowInsets(EdgeInsets())
             
@@ -41,7 +61,7 @@ struct DrinkDetail: View {
                 Text(drink.description)
                     .foregroundColor(.primary)
                     .font(.body)
-                .lineLimit(nil)
+                    .lineLimit(nil)
                     .lineSpacing(12)
                 
                 HStack {
@@ -68,14 +88,15 @@ struct OrderButton : View {
             self.showingAlert.toggle()
         }){
             Text("Order now!")
-        }.frame(width: 200, height: 50)
-            .background(Color.blue)
-            .foregroundColor(.white)
-            .font(.headline)
+        }
+        .frame(width: 200, height: 50)
+        .background(Color.blue)
+        .foregroundColor(.white)
+        .font(.headline)
         .cornerRadius(10)
-            .alert(isPresented: $showingAlert) {
-                Alert(title: Text("Important message"), message: Text("Wear sunscreen"), dismissButton: .default(Text("Got it!")))
-            }
+        .alert(isPresented: $showingAlert) {
+            Alert(title: Text("Important message"), message: Text("Wear sunscreen"), dismissButton: .default(Text("Got it!")))
+        }
     }
 }
 
